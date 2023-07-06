@@ -51,4 +51,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Feel free to modify and customize the README.md according to your specific project requirements and additional information you would like to include.
