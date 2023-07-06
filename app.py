@@ -13,8 +13,10 @@ from langchain.agents.agent_toolkits import (
     VectorStoreInfo
 )
 
+from api_key import api_key
+
 # Set APIkey for OpenAI Service
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = api_key
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
