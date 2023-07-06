@@ -12,9 +12,9 @@ from langchain.agents.agent_toolkits import (
     VectorStoreToolkit,
     VectorStoreInfo
 )
-from api_key import api_key
+
 # Set APIkey for OpenAI Service
-os.environ['OPENAI_API_KEY'] = api_key
+os.environ['OPENAI_API_KEY'] = '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'
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)
@@ -98,29 +98,29 @@ style.configure("Background.TLabel", background=background_color)
 
 # Create GUI components
 file_button = Button(window, text="Open PDF", command=open_file)
-file_button.pack(pady=10)
+file_button.grid(row=0, column=0, padx=10, pady=10)
 
 doc_label = Label(window, text="Based on the: ", style="Background.TLabel")
-doc_label.pack()
+doc_label.grid(row=1, column=0, padx=10, pady=5)
 
 prompt_label = Label(window, text="Input your prompt here",
                      style="Background.TLabel")
-prompt_label.pack(pady=5)
+prompt_label.grid(row=2, column=0, padx=10, pady=5)
 
 prompt_entry = tk.Text(
     window, height=5, width=50, bg=entry_background_color, fg=entry_foreground_color, insertbackground=entry_foreground_color)
-prompt_entry.pack(pady=5)
+prompt_entry.grid(row=3, column=0, padx=10, pady=5, sticky="nsew")
 
 generate_button = Button(
     window, text="Generate Response", command=generate_response)
-generate_button.pack(pady=10)
+generate_button.grid(row=4, column=0, padx=10, pady=10)
 
 response_label = Label(window, text="Response:", style="Background.TLabel")
-response_label.pack(pady=5)
+response_label.grid(row=5, column=0, padx=10, pady=5)
 
 response_text = tk.Text(
     window, height=5, width=50, state=tk.DISABLED, bg=entry_background_color, fg=entry_foreground_color, font=response_font)
-response_text.pack(pady=5)
+response_text.grid(row=6, column=0, padx=10, pady=5, sticky="nsew")
 
 # Configure grid weights to make prompt_entry and response_text expand with the window
 window.grid_columnconfigure(0, weight=1)
