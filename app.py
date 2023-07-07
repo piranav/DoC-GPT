@@ -102,7 +102,8 @@ style.configure("Background.TLabel", background=background_color)
 file_button = Button(window, text="Open PDF", command=open_file)
 file_button.grid(row=0, column=0, padx=10, pady=10)
 
-doc_label = Label(window, text="Based on the: ", style="Background.TLabel")
+doc_label = Label(window, text="Generated based on: ",
+                  style="Background.TLabel")
 doc_label.grid(row=1, column=0, padx=10, pady=5)
 
 prompt_label = Label(window, text="Input your prompt here",
