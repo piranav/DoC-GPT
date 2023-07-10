@@ -12,7 +12,7 @@ from langchain.agents.agent_toolkits import (
     VectorStoreToolkit,
     VectorStoreInfo
 )
-# from api_key import api_key
+from api_key import api_key
 
 # Set APIkey for OpenAI Service
 os.environ['OPENAI_API_KEY'] = api_key
