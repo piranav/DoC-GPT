@@ -13,7 +13,7 @@ DoC GPT is a GUI application based on Tkinter that utilizes OpenAI's GPT languag
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   gh repo clone piranav/DoC-GPT
    ```
 
 2. Install the required dependencies:
@@ -25,7 +25,7 @@ DoC GPT is a GUI application based on Tkinter that utilizes OpenAI's GPT languag
 3. Set the OpenAI API key as an environment variable:
 
    ```bash
-   export OPENAI_API_KEY=your-api-key
+   os.environ['OPENAI_API_KEY'] = api_key
    ```
 
 ## Usage
@@ -49,4 +49,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
